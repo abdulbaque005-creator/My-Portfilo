@@ -14,6 +14,7 @@
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Plus Jakarta Sans', sans-serif;
     --nav-bg: rgba(5, 5, 5, 0.7);
+    --nav-bg-scrolled: rgba(5, 5, 5, 0.9);
     --timeline-dot: #050505;
 }
 
@@ -26,6 +27,7 @@ body.light-theme {
     --text-primary: #0f172a;
     --text-secondary: #475569;
     --nav-bg: rgba(248, 250, 252, 0.85);
+    --nav-bg-scrolled: rgba(248, 250, 252, 0.95);
     --timeline-dot: #f8fafc;
     --glow-shadow: 0 4px 15px rgba(123, 97, 255, 0.2);
 }
@@ -163,6 +165,11 @@ nav {
     border-bottom: 1px solid var(--border);
     z-index: 1000;
     transition: padding 0.3s ease, background 0.4s ease;
+}
+
+nav.scrolled {
+    padding: 0.8rem 5%;
+    background: var(--nav-bg-scrolled);
 }
 
 .logo h2 {

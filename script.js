@@ -135,11 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Navbar shrink effect
         const nav = document.querySelector('nav');
         if(scrollPx > 50) {
-            nav.style.padding = "0.8rem 5%";
-            nav.style.background = "rgba(5, 5, 5, 0.9)";
+            nav.classList.add('scrolled');
         } else {
-            nav.style.padding = "1.2rem 5%";
-            nav.style.background = "rgba(5, 5, 5, 0.7)";
+            nav.classList.remove('scrolled');
         }
     });
 
