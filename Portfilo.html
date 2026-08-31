@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Abdul Baque | Portfolio</title>
+    <title>Abdul Baque | AI & ML Engineer | Portfolio</title>
+    <meta name="description" content="Portfolio of Abdul Baque, a B.Tech student specializing in Artificial Intelligence and Machine Learning. Passionate about software development and coding.">
+    
+    <!-- Open Graph / Social Sharing Meta Tags -->
+    <meta property="og:title" content="Abdul Baque | AI & ML Engineer">
+    <meta property="og:description" content="Portfolio of Abdul Baque, a B.Tech student specializing in Artificial Intelligence and Machine Learning.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://abdulbaque005-creator.github.io/My-Portfilo/">
     
     <!-- Premium Fonts: Outfit for Headings, Plus Jakarta Sans for Body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,7 +86,7 @@
             <div class="hero-cta">
                 <a href="#contact" class="btn primary">Get In Touch</a>
                 <a href="#projects" class="btn secondary">View Work</a>
-                <a href="Ab_Baque_CV.pdf" target="_blank" class="btn secondary cv-btn"><i class="ph ph-download-simple"></i> Download CV</a>
+                <a href="Ab_Baque_CV.pdf" target="_blank" class="btn secondary cv-btn" aria-label="Download CV as PDF"><i class="ph ph-download-simple"></i> Download CV <span class="file-info" style="font-size: 0.8em; opacity: 0.8; margin-left: 5px;">(PDF)</span></a>
             </div>
         </div>
         <div class="hero-image-wrapper reveal delay-2">
@@ -254,6 +261,9 @@
                 <div class="project-tech">
                     <span>Node.js</span><span>MySQL</span><span>JS</span>
                 </div>
+                <div class="project-links" style="margin-top: 20px; display: flex; gap: 10px;">
+                    <a href="https://github.com/abdulbaque005-creator" target="_blank" class="btn secondary" style="padding: 8px 12px; font-size: 0.9rem; flex: 1; justify-content: center;"><i class="ph ph-github-logo"></i> Code</a>
+                </div>
             </div>
             <div class="card project-card hover-tilt reveal delay-2">
                 <div class="project-icon"><i class="ph ph-browsers"></i></div>
@@ -261,6 +271,9 @@
                 <p>Designed and developed a professional, animated portfolio website using HTML, CSS, and JavaScript with modern glassmorphism UI.</p>
                 <div class="project-tech">
                     <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <div class="project-links" style="margin-top: 20px; display: flex; gap: 10px;">
+                    <a href="https://github.com/abdulbaque005-creator/My-Portfilo" target="_blank" class="btn secondary" style="padding: 8px 12px; font-size: 0.9rem; flex: 1; justify-content: center;"><i class="ph ph-github-logo"></i> Code</a>
                 </div>
             </div>
             <div class="card project-card hover-tilt reveal delay-3">
@@ -270,6 +283,9 @@
                 <div class="project-tech">
                     <span>Web Dev</span><span>Education</span>
                 </div>
+                <div class="project-links" style="margin-top: 20px; display: flex; gap: 10px;">
+                    <a href="https://github.com/abdulbaque005-creator" target="_blank" class="btn secondary" style="padding: 8px 12px; font-size: 0.9rem; flex: 1; justify-content: center;"><i class="ph ph-github-logo"></i> Code</a>
+                </div>
             </div>
             <div class="card project-card hover-tilt reveal delay-4">
                 <div class="project-icon"><i class="ph ph-robot"></i></div>
@@ -277,6 +293,9 @@
                 <p>Exploring machine learning algorithms, data science pipelines, and building artificial intelligence models.</p>
                 <div class="project-tech">
                     <span>Python</span><span>AI/ML</span>
+                </div>
+                <div class="project-links" style="margin-top: 20px; display: flex; gap: 10px;">
+                    <a href="https://github.com/abdulbaque005-creator" target="_blank" class="btn secondary" style="padding: 8px 12px; font-size: 0.9rem; flex: 1; justify-content: center;"><i class="ph ph-github-logo"></i> Code</a>
                 </div>
             </div>
         </div>
@@ -351,36 +370,56 @@
             <h2 class="section-title">Let's Connect<span class="dot">.</span></h2>
             <p class="contact-desc">I'm always open to discussing tech, programming, or new opportunities.</p>
             
-            <div class="contact-grid">
-                <a href="mailto:abdul.baque005@gmail.com" class="contact-item hover-tilt">
-                    <div class="icon-box"><i class="ph ph-envelope-simple"></i></div>
-                    <div class="contact-details">
-                        <span class="label">Email</span>
-                        <span class="value">abdul.baque005@gmail.com</span>
+            <div class="contact-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div class="contact-info-col" style="display: flex; flex-direction: column; gap: 20px;">
+                    <a href="mailto:abdul.baque005@gmail.com" class="contact-item hover-tilt">
+                        <div class="icon-box"><i class="ph ph-envelope-simple"></i></div>
+                        <div class="contact-details">
+                            <span class="label">Email</span>
+                            <span class="value">abdul.baque005@gmail.com</span>
+                        </div>
+                    </a>
+                    
+                    <div class="contact-item hover-tilt">
+                        <div class="icon-box"><i class="ph ph-phone"></i></div>
+                        <div class="contact-details">
+                            <span class="label">Phone</span>
+                            <span class="value">+91 7051549106</span>
+                        </div>
                     </div>
-                </a>
-                
-                <div class="contact-item hover-tilt">
-                    <div class="icon-box"><i class="ph ph-phone"></i></div>
-                    <div class="contact-details">
-                        <span class="label">Phone</span>
-                        <span class="value">+91 7051549106</span>
+                    
+                    <div class="contact-item hover-tilt">
+                        <div class="icon-box"><i class="ph ph-map-pin-line"></i></div>
+                        <div class="contact-details">
+                            <span class="label">Location</span>
+                            <span class="value">Srinagar, J&K, India</span>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="contact-item hover-tilt">
-                    <div class="icon-box"><i class="ph ph-map-pin-line"></i></div>
-                    <div class="contact-details">
-                        <span class="label">Location</span>
-                        <span class="value">Srinagar, J&K, India</span>
-                    </div>
+                <div class="contact-form-col">
+                    <form id="contact-form" class="glass-form" action="https://formspree.io/f/placeholder" method="POST" style="display: flex; flex-direction: column; gap: 15px; background: rgba(255,255,255,0.03); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); box-shadow: inset 0 0 20px rgba(0,0,0,0.2);">
+                        <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+                            <label for="name" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500;">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe" style="padding: 14px; border-radius: 10px; border: 1px solid var(--border); background: rgba(0,0,0,0.2); color: white; outline: none; transition: border 0.3s ease, box-shadow 0.3s ease; font-family: inherit;">
+                        </div>
+                        <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+                            <label for="email" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500;">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com" style="padding: 14px; border-radius: 10px; border: 1px solid var(--border); background: rgba(0,0,0,0.2); color: white; outline: none; transition: border 0.3s ease, box-shadow 0.3s ease; font-family: inherit;">
+                        </div>
+                        <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+                            <label for="message" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500;">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="How can I help you?" style="padding: 14px; border-radius: 10px; border: 1px solid var(--border); background: rgba(0,0,0,0.2); color: white; outline: none; resize: none; transition: border 0.3s ease, box-shadow 0.3s ease; font-family: inherit;"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary" style="margin-top: 10px; border: none; cursor: pointer; width: 100%; justify-content: center; padding: 14px; font-size: 1rem;">Send Message <i class="ph ph-paper-plane-right"></i></button>
+                    </form>
                 </div>
             </div>
             
-            <div class="social-links">
-                <a href="https://github.com/abdulbaque005-creator" target="_blank" class="social-btn"><i class="ph ph-github-logo"></i></a>
-                <a href="https://linkedin.com/in/abdul-baque-a69573381" target="_blank" class="social-btn"><i class="ph ph-linkedin-logo"></i></a>
-                <a href="https://instagram.com/abdul.baque8" target="_blank" class="social-btn"><i class="ph ph-instagram-logo"></i></a>
+            <div class="social-links" style="justify-content: center; margin-top: 20px;">
+                <a href="https://github.com/abdulbaque005-creator" target="_blank" class="social-btn" aria-label="GitHub Profile"><i class="ph ph-github-logo"></i></a>
+                <a href="https://linkedin.com/in/abdul-baque-a69573381" target="_blank" class="social-btn" aria-label="LinkedIn Profile"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="https://instagram.com/abdul.baque8" target="_blank" class="social-btn" aria-label="Instagram Profile"><i class="ph ph-instagram-logo"></i></a>
             </div>
         </div>
     </section>
