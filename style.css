@@ -1060,3 +1060,15 @@ footer {
         display: none;
     }
 }
+
+/* Achievement Logo Blend Mode */
+.achievement-logo {
+    mix-blend-mode: screen;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 5px rgba(123, 97, 255, 0.4));
+}
+
+body.light-theme .achievement-logo {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: multiply;
+}
