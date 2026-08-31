@@ -1,191 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Abdul Baque | Aspiring Data Scientist</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Abdul Baque | Portfolio</title>
+    
+    <!-- Premium Fonts: Outfit for Headings, Plus Jakarta Sans for Body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Phosphor Icons for elegant UI icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
-<!-- Custom Cursor -->
-<div class="cursor-dot"></div>
-<div class="cursor-outline"></div>
+    <!-- Background Elements -->
+    <div class="bg-mesh"></div>
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
 
-<!-- Scroll Progress -->
-<div class="scroll-progress-container">
-    <div class="scroll-progress-bar"></div>
-</div>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-
-<!-- NAV -->
-<nav>
-    <h2>AB BAQUE</h2>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home">
-    <img src="Me.jpeg" alt="Abdul Baque" class="reveal">
-    <div class="hero-content reveal delay-1">
-        <h1>Abdul <span>Baque</span></h1>
-        <div class="typing"></div>
-        <p>B.Tech CSE (AI & ML) | Lovely Professional University</p>
-        <p>📍 Srinagar, Jammu & Kashmir</p>
-        <p>🏸 State-Level Badminton Player</p>
-        <p>🎯 Career Goal: Data Scientist</p>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
     </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about">
-    <h1 class="section-title reveal">About Me</h1>
-    <div class="card reveal delay-1">
-        <p>Hello! I'm <strong>Abdul Baque</strong>, an aspiring Data Scientist and Artificial Intelligence enthusiast pursuing B.Tech in Computer Science Engineering with specialization in Artificial Intelligence and Machine Learning at Lovely Professional University.</p>
-        <br>
-        <p>I am passionate about software development, artificial intelligence, machine learning, data science, and modern technologies. I enjoy solving problems, building projects, and continuously improving my technical skills.</p>
-        <br>
-        <p>Apart from academics, I am a state-level badminton player. Sports have taught me leadership, discipline, teamwork, consistency, and perseverance.</p>
-    </div>
-</section>
+    <!-- NAV -->
+    <nav>
+        <div class="logo">
+            <h2>AB BAQUE<span>.</span></h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <i class="ph ph-sun"></i>
+            </button>
+            <a href="mailto:abdul.baque005@gmail.com" class="btn primary hire-btn">Hire Me</a>
+            <div class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </nav>
 
-<!-- EDUCATION -->
-<section id="education">
-    <h1 class="section-title reveal">Education</h1>
-    <div class="card timeline reveal delay-1">
-        <div class="timeline-item reveal delay-2">
-            <h2>Lovely Professional University</h2>
-            <p>B.Tech CSE (AI & ML)</p>
-            <p>2025–2029 | CGPA: 7.6</p>
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content reveal">
+            <p class="greeting">Hi, I am</p>
+            <h1>Abdul <span class="accent-text">Baque</span></h1>
+            <div class="typing-container">
+                <span class="typing"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-desc">2nd Year B.Tech Student specializing in Artificial Intelligence and Machine Learning. Passionate about software development, coding, and continuous learning.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="ph ph-map-pin"></i>
+                    <span>Srinagar, J&K</span>
+                </div>
+                <div class="stat-item">
+                    <i class="ph ph-medal"></i>
+                    <span>State-Level Player</span>
+                </div>
+            </div>
+            
+            <div class="hero-cta">
+                <a href="#contact" class="btn primary">Get In Touch</a>
+                <a href="#projects" class="btn secondary">View Work</a>
+                <a href="Ab_Baque_CV.pdf" target="_blank" class="btn secondary cv-btn"><i class="ph ph-download-simple"></i> Download CV</a>
+            </div>
         </div>
-        <div class="timeline-item reveal delay-3">
-            <h2>KIE Higher Secondary School</h2>
-            <p>2023–2025 | Percentage: 70%</p>
+        <div class="hero-image-wrapper reveal delay-2">
+            <div class="image-border">
+                <img src="Me.jpeg" alt="Abdul Baque" class="hero-img">
+            </div>
+            <div class="floating-badge badge-1">
+                <i class="ph ph-code"></i> AI & ML
+            </div>
+            <div class="floating-badge badge-2">
+                <i class="ph ph-database"></i> Database
+            </div>
         </div>
-        <div class="timeline-item reveal delay-3">
-            <h2>Iqbal Memorial Institute</h2>
-            <p>2011–2023 | 10th Percentage: 95%</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills">
-    <h1 class="section-title reveal">Technical Skills</h1>
-    <div class="card reveal delay-1">
-        <div style="margin-bottom: 30px;">
-            <span class="skill">Python</span>
-            <span class="skill">C</span>
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">SQL</span>
-            <span class="skill">AI</span>
-            <span class="skill">Machine Learning</span>
-            <span class="skill">Data Science</span>
-            <span class="skill">GitHub</span>
-            <span class="skill">VS Code</span>
+    <!-- ABOUT -->
+    <section id="about">
+        <h2 class="section-title reveal">About Me<span class="dot">.</span></h2>
+        <div class="card about-card reveal delay-1">
+            <div class="about-image-container">
+                <img src="Me.jpeg" alt="Abdul Baque" class="about-img">
+            </div>
+            <div class="about-text">
+                <p>Hello! I'm <strong>Abdul Baque</strong>, an aspiring Data Scientist and Artificial Intelligence enthusiast currently pursuing a B.Tech in Computer Science Engineering (AI & ML) at Lovely Professional University.</p>
+                <p class="highlight-quote">"CSE student with strong coding skills, quick learning ability and a passion for software development."</p>
+                <p>Apart from academics, I am a state-level badminton player. Sports have taught me leadership, discipline, teamwork, consistency, and perseverance—skills I carry into my professional coding journey.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="progress reveal delay-2">
-            <h3>Python</h3>
-            <div class="bar"><div class="fill" data-width="90%"></div></div>
-        </div>
-        <div class="progress reveal delay-2">
-            <h3>HTML/CSS</h3>
-            <div class="bar"><div class="fill" data-width="85%"></div></div>
-        </div>
-        <div class="progress reveal delay-2">
-            <h3>JavaScript</h3>
-            <div class="bar"><div class="fill" data-width="70%"></div></div>
-        </div>
-    </div>
-</section>
+    <!-- EXPERIENCE & LEARNING -->
+    <section id="experience">
+        <h2 class="section-title reveal">Experience<span class="dot">.</span></h2>
+        <div class="timeline reveal delay-1">
+            
+            <div class="timeline-item reveal delay-2">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content card hover-tilt">
+                    <span class="date">2026 - 2027</span>
+                    <h3>Database & Programming</h3>
+                    <h4>Core Concepts</h4>
+                    <ul>
+                        <li>Learning PostgreSQL and C programming (2nd semester)</li>
+                        <li>Working with database queries and basic logic building</li>
+                        <li>Strengthening core programming concepts</li>
+                    </ul>
+                </div>
+            </div>
 
-<!-- PROJECTS -->
-<section id="projects">
-    <h1 class="section-title reveal">Projects & Learning</h1>
-    <div class="grid">
-        <div class="card reveal delay-1">
-            <h3>Personal Portfolio Website</h3>
-            <p>Designed and developed a professional, animated portfolio website using HTML, CSS, and JavaScript with modern glassmorphism UI.</p>
-        </div>
-        <div class="card reveal delay-2">
-            <h3>Physics Quiz Platform</h3>
-            <p>Built an interactive educational website for engineering physics students, featuring dynamic quizzes and score tracking.</p>
-        </div>
-        <div class="card reveal delay-3">
-            <h3>AI & ML Learning Projects</h3>
-            <p>Exploring machine learning algorithms, data science pipelines, and building artificial intelligence models.</p>
-        </div>
-    </div>
-</section>
+            <div class="timeline-item reveal delay-3">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content card hover-tilt">
+                    <span class="date">2025 - 2026</span>
+                    <h3>Student Developer</h3>
+                    <h4>Foundations</h4>
+                    <ul>
+                        <li>Learned Python, HTML, CSS & JavaScript (1st semester)</li>
+                        <li>Practicing programming and building basic projects</li>
+                        <li>Developing problem-solving skills</li>
+                    </ul>
+                </div>
+            </div>
 
-<!-- CERTIFICATIONS -->
-<section>
-    <h1 class="section-title reveal">Certifications</h1>
-    <div class="grid">
-        <div class="card cert reveal delay-1">
-            <img src="Infosys.png" alt="Infosys Cert">
-            <h3>Infosys Springboard</h3>
-            <p>Introduction to Artificial Intelligence</p>
         </div>
-        <div class="card cert reveal delay-2">
-            <img src="Python1.png" alt="Saylor Cert">
-            <h3>Saylor Academy</h3>
-            <p>Introduction to Python</p>
-        </div>
-        <div class="card cert reveal delay-3">
-            <img src="Anger Managment.png" alt="Apna Vidyalaya Cert">
-            <h3>Apna Vidyalaya</h3>
-            <p>Anger Management Certification</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- ACHIEVEMENTS -->
-<section>
-    <h1 class="section-title reveal">Achievements</h1>
-    <div class="grid">
-        <div class="card reveal delay-1" style="display: flex; align-items: center; justify-content: center; text-align: center; font-size: 1.2rem; font-weight: 500;">
-            🏸 State-Level Badminton Player
+    <!-- EDUCATION -->
+    <section id="education">
+        <h2 class="section-title reveal">Education<span class="dot">.</span></h2>
+        <div class="timeline reveal delay-1">
+            
+            <div class="timeline-item reveal delay-2">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content card hover-tilt">
+                    <span class="date">2025 – 2029</span>
+                    <h3>Lovely Professional University</h3>
+                    <h4>B.Tech CSE (AI & ML)</h4>
+                    <p class="grade">CGPA: 7.6</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal delay-3">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content card hover-tilt">
+                    <span class="date">2023 – 2025</span>
+                    <h3>Iqbal Memorial Institute</h3>
+                    <h4>Secondary School</h4>
+                    <p class="grade">Percentage: 90.0%</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal delay-4">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content card hover-tilt">
+                    <span class="date">2021 – 2023</span>
+                    <h3>Iqbal Memorial Institute</h3>
+                    <h4>High School</h4>
+                    <p class="grade">Percentage: 95.0%</p>
+                </div>
+            </div>
+            
         </div>
-        <div class="card reveal delay-2" style="display: flex; align-items: center; justify-content: center; text-align: center; font-size: 1.2rem; font-weight: 500;">
-            📜 Multiple Professional Certifications
+    </section>
+
+    <!-- SKILLS & LANGUAGES -->
+    <section id="skills">
+        <h2 class="section-title reveal">Skills & Languages<span class="dot">.</span></h2>
+        
+        <div class="skills-container">
+            <div class="skills-category card reveal delay-1">
+                <h3><i class="ph ph-code-block"></i> Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skills-category card reveal delay-2">
+                <h3><i class="ph ph-database-stroke"></i> Databases & Data</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">ORACLE</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Data Science</span>
+                </div>
+            </div>
+
+            <div class="skills-category card reveal delay-3">
+                <h3><i class="ph ph-brain"></i> Specialization</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Artificial Intelligence</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </div>
+
+            <div class="skills-category card reveal delay-4">
+                <h3><i class="ph ph-translate"></i> Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">English</span>
+                    <span class="skill-tag">Hindi</span>
+                </div>
+            </div>
         </div>
-        <div class="card reveal delay-3" style="display: flex; align-items: center; justify-content: center; text-align: center; font-size: 1.2rem; font-weight: 500;">
-            🎯 Aspiring Data Scientist
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2 class="section-title reveal">Projects<span class="dot">.</span></h2>
+        <div class="grid projects-grid">
+            <div class="card project-card hover-tilt reveal delay-1">
+                <div class="project-icon"><i class="ph ph-kanban"></i></div>
+                <h3>Kanban Task Management</h3>
+                <p>Developed a Kanban-style task management app to organize to-do items by workflow stages. Implemented task creation, tracking, and movement across boards.</p>
+                <div class="project-tech">
+                    <span>Node.js</span><span>MySQL</span><span>JS</span>
+                </div>
+            </div>
+            <div class="card project-card hover-tilt reveal delay-2">
+                <div class="project-icon"><i class="ph ph-browsers"></i></div>
+                <h3>Personal Portfolio Website</h3>
+                <p>Designed and developed a professional, animated portfolio website using HTML, CSS, and JavaScript with modern glassmorphism UI.</p>
+                <div class="project-tech">
+                    <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+            </div>
+            <div class="card project-card hover-tilt reveal delay-3">
+                <div class="project-icon"><i class="ph ph-atom"></i></div>
+                <h3>Physics Quiz Platform</h3>
+                <p>Built an interactive educational website for engineering physics students, featuring dynamic quizzes and score tracking.</p>
+                <div class="project-tech">
+                    <span>Web Dev</span><span>Education</span>
+                </div>
+            </div>
+            <div class="card project-card hover-tilt reveal delay-4">
+                <div class="project-icon"><i class="ph ph-robot"></i></div>
+                <h3>AI & ML Learning Projects</h3>
+                <p>Exploring machine learning algorithms, data science pipelines, and building artificial intelligence models.</p>
+                <div class="project-tech">
+                    <span>Python</span><span>AI/ML</span>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact">
-    <h1 class="section-title reveal">Contact</h1>
-    <div class="card reveal delay-1">
-        <p>📧 <a href="mailto:abdul.baque005@gmail.com">abdul.baque005@gmail.com</a></p>
-        <p>📞 +91 7051549106</p>
-        <p>📍 Srinagar, Jammu & Kashmir, India</p>
-        <p>💻 <a href="https://github.com/abdulbaque005-creator" target="_blank">github.com/abdulbaque005-creator</a></p>
-        <p>🔗 <a href="https://linkedin.com/in/abdul-baque-a69573381" target="_blank">linkedin.com/in/abdul-baque-a69573381</a></p>
-        <p>📷 <a href="https://instagram.com/abdul.baque8" target="_blank">instagram.com/abdul.baque8</a></p>
-    </div>
-</section>
+    <!-- CERTIFICATIONS & ACHIEVEMENTS -->
+    <section id="achievements">
+        <h2 class="section-title reveal">Achievements<span class="dot">.</span></h2>
+        
+        <div class="achievements-wrapper">
+            <div class="certifications reveal delay-1">
+                <h3 class="sub-title"><i class="ph ph-certificate"></i> Certifications</h3>
+                <div class="cert-grid">
+                    <div class="card cert-card hover-tilt">
+                        <img src="Infosys.png" alt="Infosys Cert">
+                        <div class="cert-info">
+                            <h4>Infosys Springboard</h4>
+                            <p>Introduction to Artificial Intelligence</p>
+                            <a href="Infosys.png" target="_blank" class="btn secondary cert-btn"><i class="ph ph-eye"></i> View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="card cert-card hover-tilt">
+                        <img src="Python1.png" alt="Saylor Cert">
+                        <div class="cert-info">
+                            <h4>Saylor Academy</h4>
+                            <p>Introduction to Python</p>
+                            <a href="Python1.png" target="_blank" class="btn secondary cert-btn"><i class="ph ph-eye"></i> View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="card cert-card hover-tilt">
+                        <img src="CyberSmart_Preview.jpg" alt="Cyber Smart Cert">
+                        <div class="cert-info">
+                            <h4>Cyber Smart</h4>
+                            <p>Cybersecurity Certification</p>
+                            <a href="Ab Baque - CyberSmart.pdf" target="_blank" class="btn secondary cert-btn"><i class="ph ph-eye"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="notable-achievements reveal delay-2">
+                <h3 class="sub-title"><i class="ph ph-trophy"></i> Notable</h3>
+                <div class="achievement-list">
+                    <div class="card achievement-card hover-tilt">
+                        <i class="ph ph-tennis-ball accent-text"></i>
+                        <span>State-Level Badminton Player</span>
+                    </div>
+                    <div class="card achievement-card hover-tilt">
+                        <i class="ph ph-student accent-text"></i>
+                        <span>Aspiring Data Scientist</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    © 2026 Abdul Baque • Designed with Modern UI Principles
-</footer>
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-container card reveal delay-1">
+            <h2 class="section-title">Let's Connect<span class="dot">.</span></h2>
+            <p class="contact-desc">I'm always open to discussing tech, programming, or new opportunities.</p>
+            
+            <div class="contact-grid">
+                <a href="mailto:abdul.baque005@gmail.com" class="contact-item hover-tilt">
+                    <div class="icon-box"><i class="ph ph-envelope-simple"></i></div>
+                    <div class="contact-details">
+                        <span class="label">Email</span>
+                        <span class="value">abdul.baque005@gmail.com</span>
+                    </div>
+                </a>
+                
+                <div class="contact-item hover-tilt">
+                    <div class="icon-box"><i class="ph ph-phone"></i></div>
+                    <div class="contact-details">
+                        <span class="label">Phone</span>
+                        <span class="value">+91 7051549106</span>
+                    </div>
+                </div>
+                
+                <div class="contact-item hover-tilt">
+                    <div class="icon-box"><i class="ph ph-map-pin-line"></i></div>
+                    <div class="contact-details">
+                        <span class="label">Location</span>
+                        <span class="value">Srinagar, J&K, India</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/abdulbaque005-creator" target="_blank" class="social-btn"><i class="ph ph-github-logo"></i></a>
+                <a href="https://linkedin.com/in/abdul-baque-a69573381" target="_blank" class="social-btn"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="https://instagram.com/abdul.baque8" target="_blank" class="social-btn"><i class="ph ph-instagram-logo"></i></a>
+            </div>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <h2>AB BAQUE<span>.</span></h2>
+            <p>© 2026 Abdul Baque. Designed with Modern UI Principles.</p>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
