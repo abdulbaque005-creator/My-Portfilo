@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Typing Animation ---
     const typingSpan = document.querySelector('.typing');
-    const textArray = ["Data Scientist", "AI/ML Engineer", "Web Developer", "Problem Solver"];
+    const textArray = ["Passionate Learner", "Problem Solver", "Tech Enthusiast", "Innovative Thinker"];
     const typingDelay = 100;
     const erasingDelay = 50;
     const newTextDelay = 2000;
