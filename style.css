@@ -1084,3 +1084,5 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     border-color: var(--accent-1) !important;
     box-shadow: 0 0 15px rgba(123, 97, 255, 0.3) !important;
 }
+
+.hero-img { background-color: var(--surface-color); }
